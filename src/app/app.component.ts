@@ -8,5 +8,7 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './app.component.html',
 })
 export class App {
+  // Propietat pública obligatòria
+  nomAplicacio = 'Pokémon League';
   protected readonly title = signal('ioc-angular-pokemon-league-adan-lopez');
 }
