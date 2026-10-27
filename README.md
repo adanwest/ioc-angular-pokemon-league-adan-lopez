@@ -20,4 +20,4 @@ Per executar el projecte: `ng serve`
 Projecte base llest. Branques creades, estructura de carpetes preparada i interfície inicial personalitzada.
 
 ## Enllaç del repositori
-https://github.com/EL_TEU_USUARI/ioc-angular-pokemon-league-adan-lopez
+https://github.com/adanwest/ioc-angular-pokemon-league-adan-lopez
