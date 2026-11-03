@@ -1,5 +1,5 @@
 <!-- Property binding al click -->
-<div class="card" (click)="seleccionarPokemon()">
+<div class="card" tabindex="0" (click)="seleccionarPokemon()" (keyup.enter)="seleccionarPokemon()">
   <h3>{{ pokemon.nom }}</h3>
   <!-- Passem la categoria al subcomponent fill via property binding -->
   <app-pokemon-badge [textCategoria]="pokemon.categoria"></app-pokemon-badge>
