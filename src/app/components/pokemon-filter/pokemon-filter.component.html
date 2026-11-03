@@ -1,0 +1,46 @@
+<div class="filter-box">
+  <!-- Declarem la variable #filtreForm per controlar la validesa de tot el bloc -->
+  <form #filtreForm="ngForm" (ngSubmit)="onAplicar()">
+    
+    <div class="form-group">
+      <label for="cercaText">Cerca per nom:</label>
+      <input 
+        type="text" 
+        id="cercaText" 
+        name="cercaText" 
+        [(ngModel)]="filtreText" 
+        required 
+        minlength="3"
+        #textControl="ngModel">
+      
+      <!-- Control de flux -->
+      @if (textControl.invalid && (textControl.dirty || textControl.touched)) {
+        <div class="error-msg" role="alert">
+          @if (textControl.errors?.['required']) {
+            <span>El text és obligatori.</span>
+          }
+          @if (textControl.errors?.['minlength']) {
+            <span>Mínim 3 caràcters.</span>
+          }
+        </div>
+      }
+    </div>
+
+    <div class="form-group">
+      <label for="categoriaSel">Categoria:</label>
+      <select id="categoriaSel" name="categoriaSel" [(ngModel)]="filtreCategoria">
+        <option value="">Totes</option>
+        <option value="Foc">Foc</option>
+        <option value="Aigua">Aigua</option>
+        <option value="Planta">Planta</option>
+        <option value="Psíquic">Psíquic</option>
+      </select>
+    </div>
+
+    <div class="buttons">
+      <!-- Botó deshabilitat si el formulari no és vàlid -->
+      <button type="submit" [disabled]="filtreForm.invalid">Aplicar Filtre</button>
+      <button type="button" (click)="onRestablir()">Restablir</button>
+    </div>
+  </form>
+</div>

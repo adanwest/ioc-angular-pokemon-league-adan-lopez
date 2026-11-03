@@ -1,0 +1,56 @@
+.list-container { padding: 20px 0; }
+.results-info { margin-bottom: 15px; }
+
+.main-layout {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.grid-section { flex: 1; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.empty-state {
+  padding: 30px;
+  background-color: #fff2ef;
+  border: 1px solid #8a1f11;
+  color: #8a1f11;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.detail-panel {
+  width: 300px;
+  padding: 20px;
+  background-color: #fbfcfd;
+  border: 2px solid #333;
+  border-radius: 8px;
+  position: sticky;
+  top: 20px;
+
+  h2 { margin-top: 0; border-bottom: 1px solid #ccc; padding-bottom: 10px; }
+  .legendary-tag {
+    color: #b8860b;
+    font-weight: bold;
+    background: #fff8dc;
+    padding: 5px;
+    border-radius: 4px;
+    text-align: center;
+  }
+
+  /* Responsive per a mòbils */
+@media (max-width: 768px) {
+  .main-layout {
+    flex-direction: column; /* Apila el llistat i el detall verticalment */
+  }
+  .detail-panel {
+    width: 100%; /* Ocupa tota l'amplada */
+    position: static; /* Scroll més net */
+  }
+}
+}

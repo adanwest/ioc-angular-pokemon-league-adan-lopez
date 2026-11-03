@@ -1,8 +1,9 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { PokemonListComponent } from './components/pokemon-list/pokemon-list.component'; // Afegit
 
 @Component({
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, PokemonListComponent],
   selector: 'app-root',
   styleUrl: './app.component.scss',
   templateUrl: './app.component.html',

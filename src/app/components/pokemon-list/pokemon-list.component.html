@@ -1,0 +1,46 @@
+<div class="list-container">
+  <app-pokemon-filter (aplicarFiltre)="onAplicarFiltre($event)"></app-pokemon-filter>
+
+  <!-- Comptador de resultats -->
+  <div class="results-info" aria-live="polite">
+    <p>Total resultats: <strong>{{ llistaFiltrada.length }}</strong></p>
+  </div>
+
+  <div class="main-layout">
+    <div class="grid-section">
+      <!-- Utilitzem @if i @else per gestionar si hi ha dades o no -->
+      @if (llistaFiltrada.length > 0) {
+        <div class="grid">
+          @for (poke of llistaFiltrada; track poke.id) {
+            <app-pokemon-card 
+              [pokemon]="poke" 
+              (seleccionat)="onPokemonSeleccionat($event)">
+            </app-pokemon-card>
+          }
+        </div>
+      } @else {
+        <!-- Estat quan no hi ha resultats -->
+        <div class="empty-state">
+          <p>No s'ha trobat cap Pokémon amb aquests criteris de cerca.</p>
+        </div>
+      }
+    </div>
+
+    <!-- Panell de detall: només es mostra si s'ha seleccionat un Pokémon -->
+    @if (pokemonSeleccionat) {
+      <aside class="detail-panel">
+        <h2>Detall del Pokémon</h2>
+        <h3>{{ pokemonSeleccionat.nom }}</h3>
+        <p><strong>Descripció:</strong> {{ pokemonSeleccionat.descripcio }}</p>
+        <p><strong>Categoria:</strong> {{ pokemonSeleccionat.categoria }}</p>
+        <p><strong>Preu de mercat:</strong> {{ pokemonSeleccionat.preuMercat }} €</p>
+        <!-- Aquí apliquem el DatePipe per formatar la data -->
+        <p><strong>Data de fitxatge:</strong> {{ pokemonSeleccionat.dataFitxatge | date:'dd/MM/yyyy' }}</p>
+        <!-- Mostrem un missatge especial si és llegendari -->
+        @if (pokemonSeleccionat.esLlegendari) {
+          <p class="legendary-tag">✨ És un Pokémon Llegendari!</p>
+        }
+      </aside>
+    }
+  </div>
+</div>

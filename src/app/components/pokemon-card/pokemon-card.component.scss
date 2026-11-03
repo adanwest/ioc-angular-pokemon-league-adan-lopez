@@ -1,0 +1,15 @@
+.card {
+  border: 1px solid #c8cacc;
+  border-radius: 8px;
+  padding: 16px;
+  cursor: pointer;
+  background-color: #fbfcfd;
+  transition: box-shadow 0.2s;
+
+  &:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-color: #245bff;
+  }
+
+  h3 { margin-top: 0; margin-bottom: 10px; }
+}

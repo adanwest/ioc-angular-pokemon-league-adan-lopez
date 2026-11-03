@@ -29,3 +29,29 @@
   color: #2e7d32;
   font-size: 1.2rem;
 }
+
+
+/* Accessibilitat: Enllaç de salt */
+.skip-link {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  background: #245bff;
+  color: white;
+  padding: 10px;
+  z-index: 9999;
+  text-decoration: none;
+  font-weight: bold;
+  transition: top 0.2s ease;
+}
+.skip-link:focus { top: 0; }
+
+/* Accessibilitat: Focus visible per a interaccions amb teclat */
+button:focus-visible, 
+input:focus-visible, 
+select:focus-visible, 
+a:focus-visible,
+.card:focus-visible {
+  outline: 3px solid #245bff !important;
+  outline-offset: 3px !important;
+}
