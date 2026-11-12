@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+/* Accessibilitat: Focus visible global per a tota l'app */
+button:focus-visible, 
+input:focus-visible, 
+select:focus-visible, 
+a:focus-visible,
+.card:focus-visible {
+  outline: 3px solid #245bff !important;
+  outline-offset: 3px !important;
+}

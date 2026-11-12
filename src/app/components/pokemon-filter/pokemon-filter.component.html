@@ -30,11 +30,11 @@
       <label for="categoriaSel">Categoria:</label>
       <select id="categoriaSel" name="categoriaSel" [(ngModel)]="filtreCategoria">
         <option value="">Totes</option>
-        <option value="Foc">Foc</option>
-        <option value="Aigua">Aigua</option>
-        <option value="Planta">Planta</option>
-        <option value="Psíquic">Psíquic</option>
-      </select>
+    <!-- CORRECCIÓ EAC2 -->
+    @for (cat of categoriesDisponibles; track cat) {
+        <option [value]="cat">{{ cat }}</option>
+    }
+  </select>
     </div>
 
     <div class="buttons">

@@ -1,4 +1,4 @@
-import { Component, Output, EventEmitter } from '@angular/core';
+import { Component, Output,Input, EventEmitter } from '@angular/core';
 import { FormsModule } from '@angular/forms'; // <-- Obligatori per als formularis
 
 @Component({
@@ -13,6 +13,9 @@ export class PokemonFilterComponent {
   filtreText: string = '';
   filtreCategoria: string = '';
 
+  // Rebem les categories de manera automàtica del pare
+  @Input() categoriesDisponibles: string[] = [];
+  
   // Emetrà un avís al pare amb els criteris quan s'apliquin els filtres
   @Output() aplicarFiltre = new EventEmitter<{ text: string, categoria: string }>();
 

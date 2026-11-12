@@ -1,5 +1,9 @@
 <div class="list-container">
-  <app-pokemon-filter (aplicarFiltre)="onAplicarFiltre($event)"></app-pokemon-filter>
+  <!-- CORRECCIÓ EAC2 -->
+  <app-pokemon-filter 
+    [categoriesDisponibles]="categoriesLlista" 
+    (aplicarFiltre)="onAplicarFiltre($event)">
+  </app-pokemon-filter>
 
   <!-- Comptador de resultats -->
   <div class="results-info" aria-live="polite">

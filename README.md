@@ -22,6 +22,7 @@ Projecte base llest. Branques creades, estructura de carpetes preparada i interf
 ## Informació Tècnica (EAC2)
 * **Branca de treball:** `ra2-components`
 * **Versions:** Node.js 24.21.0, Angular CLI 22.2.1
+- **Dades Mock:** 39 elements registrats (`pokemon.mock.ts`)
 * **Comandes bàsiques:** 
   * Instal·lació: `npm install`
   * Execució: `ng serve`

@@ -18,6 +18,8 @@ export class PokemonListComponent {
   llistaFiltrada: Pokemon[] = [...this.llistaPokemon];
   // Variable per guardar el Pokémon que estiguem veient al detall
   pokemonSeleccionat: Pokemon | null = null;
+//CORRECCIÓ EAC2
+categoriesLlista: string[] = [...new Set(POKEMON_DATA.map(p => p.categoria))];
 
   // Rep l'avís de l'@Output de la targeta
   onPokemonSeleccionat(pokemon: Pokemon) {
@@ -38,4 +40,11 @@ export class PokemonListComponent {
     // Si filtrem, amaguem el detall per netejar la pantalla
     this.pokemonSeleccionat = null;
 }
+
+constructor() {
+  // Extraiem les categories úniques de les dades mock
+  const cats = POKEMON_DATA.map(p => p.categoria);
+  this.categoriesLlista = [...new Set(cats)];
+}
+
 }
