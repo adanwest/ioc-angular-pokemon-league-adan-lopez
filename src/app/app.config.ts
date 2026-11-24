@@ -1,10 +1,21 @@
 import { ApplicationConfig, provideBrowserGlobalErrorListeners } from '@angular/core';
 import { provideRouter } from '@angular/router';
 import { routes } from './app.routes';
+import { provideHttpClient, withInterceptors } from '@angular/common/http';
+import { apiInterceptor } from './interceptors/api.interceptor';
+
 
 export const appConfig: ApplicationConfig = {
   providers: [
     provideBrowserGlobalErrorListeners(),
-    provideRouter(routes)
+    provideRouter(routes),
+    provideHttpClient(withInterceptors([apiInterceptor]))
   ]
+};
+
+export const API_CONFIG = {
+  baseUrl: 'http://localhost:3000',
+  endpoints: {
+    pokemons: 'http://localhost:3000/pokemons'
+  }
 };

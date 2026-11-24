@@ -3,7 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { PokemonListComponent } from './components/pokemon-list/pokemon-list.component'; // Afegit
 
 @Component({
-  imports: [RouterOutlet, PokemonListComponent],
+  imports: [PokemonListComponent],
   selector: 'app-root',
   styleUrl: './app.component.scss',
   templateUrl: './app.component.html',

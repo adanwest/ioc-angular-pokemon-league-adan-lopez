@@ -20,18 +20,23 @@ Per executar el projecte: `ng serve`
 Projecte base llest. Branques creades, estructura de carpetes preparada i interfície inicial personalitzada.
 
 ## Informació Tècnica (EAC2)
-* **Branca de treball:** `ra2-components`
-* **Versions:** Node.js 24.21.0, Angular CLI 22.2.1
+- **Branca de treball:** `ra2-components`
+- **Versions:** Node.js 24.21.0, Angular CLI 22.2.1
 - **Dades Mock:** 39 elements registrats (`pokemon.mock.ts`)
-* **Comandes bàsiques:** 
-  * Instal·lació: `npm install`
-  * Execució: `ng serve`
-* **Components creats:** 
-  * `pokemon-list`: Contenidor principal, matriu i detall.
-  * `pokemon-card`: Mostra un únic element.
-  * `pokemon-badge`: Mostra l'etiqueta de categoria.
-  * `pokemon-filter`: Formulari amb validacions de cerca.
+- **Comandes bàsiques:** 
+  - Instal·lació: `npm install`
+  - Execució: `ng serve`
+- **Components creats:** 
+  - `pokemon-list`: Contenidor principal, matriu i detall.
+  - `pokemon-card`: Mostra un únic element.
+  - `pokemon-badge`: Mostra l'etiqueta de categoria.
+  - `pokemon-filter`: Formulari amb validacions de cerca.
 
+## Informació Tècnica (EAC3)
+- **Branca de treball:** `ra3-serveis`
+- **Execució de l'API REST simulada (`json-server` al port 3000):**
+  ```bash
+  npm run api
 
 ## Enllaç del repositori
 https://github.com/adanwest/ioc-angular-pokemon-league-adan-lopez

@@ -1,0 +1,154 @@
+{
+  "pokemons": [
+    {
+      "id": "1",
+      "name": "  Pikachu  ",
+      "description": "Ratolí elèctric capaç de generar descàrregues potents.",
+      "category": "elèctric",
+      "market_price": "15000",
+      "signing_date": "2026-09-01",
+      "region": "Kanto",
+      "is_legendary": false
+    },
+    {
+      "id": "2",
+      "name": "Charizard",
+      "description": "Drac de foc que escup flames capaces de fondre roques.",
+      "category": "FOC",
+      "market_price": 45000,
+      "signing_date": "2026-08-15",
+      "region": "Kanto",
+      "is_legendary": false
+    },
+    {
+      "id": "3",
+      "name": "  Blastoise",
+      "description": "Tortuga gegant amb canons d'aigua a pressió a la closca.",
+      "category": "Aigua",
+      "market_price": 42000,
+      "signing_date": "2026-08-20",
+      "region": "Kanto",
+      "is_legendary": false
+    },
+    {
+      "id": "4",
+      "name": "Venusaur",
+      "description": "La flor del seu llom absorbeix energia solar per atacar.",
+      "category": "planta",
+      "market_price": 41000,
+      "signing_date": "2026-08-22",
+      "region": "Kanto",
+      "is_legendary": false
+    },
+    {
+      "id": "5",
+      "name": "Mewtwo",
+      "description": "Pokémon creat genèticament amb poders psíquics extraordinaris.",
+      "category": "Psíquic",
+      "market_price": 120000,
+      "signing_date": "2026-10-01",
+      "region": "Kanto",
+      "is_legendary": true
+    },
+    {
+      "id": "6",
+      "name": "Gengar ",
+      "description": "S'amaga a les ombres i absorbeix la calor del voltant.",
+      "category": "Fantasma",
+      "market_price": 32000,
+      "signing_date": "2026-09-10",
+      "region": "Kanto",
+      "is_legendary": false
+    },
+    {
+      "id": "7",
+      "name": "Lucario",
+      "description": "Pot detectar i manipular l'aura de tots els éssers vius.",
+      "category": "Lluita",
+      "market_price": 38000,
+      "signing_date": "2026-09-14",
+      "region": "Sinnoh",
+      "is_legendary": false
+    },
+    {
+      "id": "8",
+      "name": "Garchomp",
+      "description": "Vola a velocitats supersòniques amb les seves ales afilades.",
+      "category": "Drac",
+      "market_price": 55000,
+      "signing_date": "2026-09-18",
+      "region": "Sinnoh",
+      "is_legendary": false
+    },
+    {
+      "id": "9",
+      "name": "Greninja",
+      "description": "Es mou com un ninja i llança estrelles d'aigua comprimida.",
+      "category": "Aigua",
+      "market_price": 48000,
+      "signing_date": "2026-09-25",
+      "region": "Kalos",
+      "is_legendary": false
+    },
+    {
+      "id": "10",
+      "name": "Rayquaza",
+      "description": "Viu a la capa d'ozó i calma els conflictes de la natura.",
+      "category": "Drac",
+      "market_price": 150000,
+      "signing_date": "2026-10-05",
+      "region": "Hoenn",
+      "is_legendary": true
+    },
+    {
+      "id": "11",
+      "name": "Gardevoir",
+      "description": "Desplega tot el seu poder psicocinètic per protegir l'entrenador.",
+      "category": "Psíquic",
+      "market_price": 34000,
+      "signing_date": "2026-09-30",
+      "region": "Hoenn",
+      "is_legendary": false
+    },
+    {
+      "id": "12",
+      "name": "Snorlax",
+      "description": "Només es desperta per menjar 400 quilos de menjar al dia.",
+      "category": "Normal",
+      "market_price": 25000,
+      "signing_date": "2026-09-12",
+      "region": "Kanto"
+    },
+    {
+      "name": "Dragonite",
+      "description": "Drac volador noble fitxat mitjançant petició POST.",
+      "category": "Drac",
+      "market_price": 68000,
+      "signing_date": "2026-11-22",
+      "region": "Kanto",
+      "is_legendary": false,
+      "id": "xZ5CUgSSoag"
+    },
+    {
+      "name": "Dragonite",
+      "description": "Drac volador noble fitxat mitjançant petició POST.",
+      "category": "Drac",
+      "market_price": 68000,
+      "signing_date": "2026-11-22",
+      "region": "Kanto",
+      "is_legendary": false,
+      "id": "GbJ0PlrTnYo"
+    },
+    {
+      "name": "Dragonite",
+      "description": "Drac volador noble fitxat mitjançant petició POST.",
+      "category": "Drac",
+      "market_price": 68000,
+      "signing_date": "2026-11-24",
+      "region": "Kanto",
+      "is_legendary": false,
+      "id": "i2Wr7FwIa1Q"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
